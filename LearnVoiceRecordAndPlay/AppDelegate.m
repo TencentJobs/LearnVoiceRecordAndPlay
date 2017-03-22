@@ -8,15 +8,20 @@
 
 #import "AppDelegate.h"
 
+#import "CFVoiceRecordAndPlayWindowController.h"
+
 @interface AppDelegate ()
 
-@property (weak) IBOutlet NSWindow *window;
+@property (nonatomic, strong) CFVoiceRecordAndPlayWindowController *voiceRecordAndPlayWindowController;
 @end
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    self.voiceRecordAndPlayWindowController = [[CFVoiceRecordAndPlayWindowController alloc] initWithWindowNibName:@"CFVoiceRecordAndPlayWindowController"];
+    
+    [self.voiceRecordAndPlayWindowController showWindow:self];
 }
 
 

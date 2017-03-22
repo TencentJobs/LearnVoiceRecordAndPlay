@@ -11,6 +11,8 @@
 		B730A0861E824E95009E7693 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B730A0851E824E95009E7693 /* main.m */; };
 		B730A0881E824E95009E7693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B730A0871E824E95009E7693 /* Assets.xcassets */; };
 		B730A08B1E824E95009E7693 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B730A0891E824E95009E7693 /* MainMenu.xib */; };
+		B74DB7811E8292B7009775F8 /* CFVoiceRecordAndPlayWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B74DB77F1E8292B7009775F8 /* CFVoiceRecordAndPlayWindowController.m */; };
+		B74DB7821E8292B7009775F8 /* CFVoiceRecordAndPlayWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B74DB7801E8292B7009775F8 /* CFVoiceRecordAndPlayWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,9 @@
 		B730A0871E824E95009E7693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B730A08A1E824E95009E7693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B730A08C1E824E95009E7693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B74DB77E1E8292B7009775F8 /* CFVoiceRecordAndPlayWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFVoiceRecordAndPlayWindowController.h; sourceTree = "<group>"; };
+		B74DB77F1E8292B7009775F8 /* CFVoiceRecordAndPlayWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFVoiceRecordAndPlayWindowController.m; sourceTree = "<group>"; };
+		B74DB7801E8292B7009775F8 /* CFVoiceRecordAndPlayWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFVoiceRecordAndPlayWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +58,7 @@
 		B730A0801E824E95009E7693 /* LearnVoiceRecordAndPlay */ = {
 			isa = PBXGroup;
 			children = (
+				B74DB77C1E829269009775F8 /* VoiceRecordAndPlay */,
 				B730A0811E824E95009E7693 /* AppDelegate.h */,
 				B730A0821E824E95009E7693 /* AppDelegate.m */,
 				B730A0871E824E95009E7693 /* Assets.xcassets */,
@@ -69,6 +75,25 @@
 				B730A0851E824E95009E7693 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B74DB77C1E829269009775F8 /* VoiceRecordAndPlay */ = {
+			isa = PBXGroup;
+			children = (
+				B74DB77D1E82927F009775F8 /* Controller */,
+			);
+			name = VoiceRecordAndPlay;
+			path = VoiceRecoderAndPlay;
+			sourceTree = "<group>";
+		};
+		B74DB77D1E82927F009775F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B74DB77E1E8292B7009775F8 /* CFVoiceRecordAndPlayWindowController.h */,
+				B74DB77F1E8292B7009775F8 /* CFVoiceRecordAndPlayWindowController.m */,
+				B74DB7801E8292B7009775F8 /* CFVoiceRecordAndPlayWindowController.xib */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B74DB7821E8292B7009775F8 /* CFVoiceRecordAndPlayWindowController.xib in Resources */,
 				B730A0881E824E95009E7693 /* Assets.xcassets in Resources */,
 				B730A08B1E824E95009E7693 /* MainMenu.xib in Resources */,
 			);
@@ -141,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B74DB7811E8292B7009775F8 /* CFVoiceRecordAndPlayWindowController.m in Sources */,
 				B730A0861E824E95009E7693 /* main.m in Sources */,
 				B730A0831E824E95009E7693 /* AppDelegate.m in Sources */,
 			);
@@ -290,6 +317,7 @@
 				B730A0911E824E95009E7693 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
